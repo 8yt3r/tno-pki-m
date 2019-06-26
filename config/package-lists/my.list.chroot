@@ -1,0 +1,12 @@
+# All the tools needed to create the pgp keys and store the private key safely.
+haveged
+gnupg2
+gnupg-agent
+libpth20
+pinentry-curses
+libccid
+pcscd
+scdaemon
+libksba8
+paperkey
+opensc
