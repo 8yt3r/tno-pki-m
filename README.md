@@ -1,4 +1,4 @@
-Name of this project: tno-pki-m (Trust No One - Public Key Infrastructure - Manager
+Name of this project: tno-pki-m (Trust No One - Public Key Infrastructure - Manager)
 
 Goal of this system: Create and back-up private keys of PGP and X509 on an air-gapped system (system 
 	without any network connection) and without any storage to reduce the risk of leaking private 
