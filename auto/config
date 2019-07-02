@@ -1,14 +1,17 @@
 #!/bin/sh
 
-#	--apt-indices false \
-#	--debootstrap-options "--variant=minbase" \
-#	--firmware-chroot false \
-#	--memtest none \
+#	--debootstrap-options "--variant=minbase" \ This command generates a Kernel Panic.
+
+
+set -e
 
 lb config noauto \
-	--apt-recommends false \
-	--bootappend-live "boot=live components hostname=tno-pki-m nopersistance username=mikpont" \
-	--debian-installer-gui false \
-	--iso-application "TNO Privatekey manager" \
-	--iso-publisher "Serge Tensen" \
+	--architectures i386 \
+	--bootappend-live "boot=live components hostname=tno-pki-m noeject nopersistance username=mikpont vga=775" \
+	--linux-flavours 686-pae \
+	--iso-application "TNO PKI Manager" \
+	--iso-preparer "Serge Tensen sergetensen@protonmail.com" \
+	--iso-publisher "Serge Tensen sergetensen@protonmail.com" \
+	--iso-volume "TNO-PKI-M" \
+	--memtest none \
 	"${@}"
