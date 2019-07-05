@@ -8,8 +8,24 @@ Requirements is this system:
 	- CPU: Intel Pentium Pro and up.
 	- RAM: 265 MB
 	- Storage: CD/DVD Reader
+	- A keyboard and monitor. (no mouse since nu Windows manager is installed)
 
 This live-boot image can be modified using the files in this git-repository. Some points of attention:
-	- Always use 'lb clean --purge' when changing architectures.
+	- Whenbooting de live iso on an airgapped system make sure at leaste the date of the system
+	  is correct since PGP or x509 keys have an expiration period need to set. If possible set the
+	  time and date in the bios of the computer and you're good to go.
+	- Always use 'lb clean --purge' when changing architectures. The clean command removes all 
+	  deafult files and directories except the ones below.
+	- The generalconfiguration for buildng the .iso is done in <projectdirectory>/auto/config
+	- The bootloader is configured in <project-directory>/config/bootloaders/isolinux (in my case).
+	- Debian packages are added from <projectdirectory/config/package-lists/my.list.chroot
+	- Default content of homefolder (.bashrc with aliasses and .gnupg/gpg.conf including rights) of 
+	  the created user is put in <project-directory>/config/includes.chroot/etc/skel.
+	- Custom packages outside the Debian repository will be added in the future to <projec-directory/
+	  config/packages.chroot.
+
+
+
+
 
 
