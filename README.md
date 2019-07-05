@@ -25,4 +25,9 @@ This live-boot image can be modified using the files in this git-repository. Som
 	  the created user is put in <projectdir>/config/includes.chroot/etc/skel/
 	- Custom packages outside the Debian repository will be added in the future to <projectdir/
 	  config/packages.chroot/.
+
+Instructions for using this repository:
+
+	- Have a Debian strechts up-to-date system, prefereably a VM.
+	- sudo apt-get install live-build debootstrap
                                                                                                    

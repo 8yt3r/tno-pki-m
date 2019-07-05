@@ -6,6 +6,8 @@
 set -e
 
 lb config noauto \
+	--apt-indices false \
+	--apt-recommends false \
 	--architectures i386 \
 	--bootappend-live "boot=live components hostname=tno-pki-m noeject nopersistance username=mikpont vga=775" \
 	--linux-flavours 686-pae \
