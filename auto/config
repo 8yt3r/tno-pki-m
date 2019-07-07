@@ -9,7 +9,8 @@ set -e
 
 lb config noauto \
 	--architectures i386 \
-	--bootappend-live "boot=live components hostname=tno-pki-m noeject nopersistance username=mikpont vga=37F" \
+	--bootappend-live "boot=live consoleblank=0 components hostname=tno-pki-m noeject nopersistance username=mikpont \
+	  vga=37" \
 	--linux-flavours 686-pae \
 	--iso-application "TNO PKI Manager" \
 	--iso-preparer "Serge Tensen sergetensen@protonmail.com" \
