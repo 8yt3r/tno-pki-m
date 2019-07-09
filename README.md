@@ -30,4 +30,6 @@ Instructions for using this repository:
 
 	- Have a Debian strechts up-to-date system, prefereably a VM.
 	- sudo apt-get install live-build debootstrap
-                                                                                                   
+	- create project directory in your home-dir
+	- from the project-dir do a git-pull of this project
+
