@@ -1,7 +1,7 @@
 # Generating the OpenPGP Masterkey
 %echo Geration the OpenPGP master-key
 Key-Type: 4
-Key-Lenght: 4096
+Key-Length: 4096
 Name-Real: Fu Bar
 Name-Comment: this is a comment
 Name-Email: fubar@tno.loc
