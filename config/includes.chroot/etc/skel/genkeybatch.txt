@@ -1,12 +1,12 @@
 # Generating the OpenPGP Masterkey
 %echo Geration the OpenPGP master-key
-Key-Type: 4
+Key-Type: RSA
 Key-Length: 4096
+Key-Usage: sign
 Name-Real: Fu Bar
 Name-Comment: this is a comment
 Name-Email: fubar@tno.loc
 Expire-Date: 1y
-Passphrase: abc
 %commit
 %echo key created
 
