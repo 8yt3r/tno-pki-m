@@ -27,8 +27,7 @@ This live-boot image can be modified using the files in this git-repository. Som
 	- <projectdir>/config/bootloaders/isolinux (in this case): The bootloader configuration.
 	- <projectdir>/config/package-lists/my.list.chroot: Debian packages are added to the .iso.
 	- <projectdir>/config/includes.chroot/etc/skel: Add default content to the homefolder like 
-	  '.bashrc 
-	  with aliasses and .gnupg/gpg.conf including rights) of the created user.
+	  '.bashrc with aliasses and .gnupg/gpg.conf including rights) of the created user.
 	- <projectdir>/config/packages.chroot/: Add custom packages outside Debian repositories.
 
 Instructions for using this repository:
